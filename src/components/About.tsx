@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 
 import "./About.css";
+import aboutImage from "../assets/about.png";
 
 export function About() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -104,7 +105,7 @@ export function About() {
     { icon: Code, label: "Projects Completed", value: 7 },
     { icon: Timer, label: "Years Experience in Ai", value: 2 },
     { icon: Cpu, label: "Technologies Mastered", value: 10 },
-    { icon: Trophy, label: "LeetCode Solved", value: 1000 },
+    { icon: Trophy, label: "LeetCode Solved", value: 500 },
   ];
 
   const [countValues, setCountValues] = useState(counters.map(() => 0));
@@ -162,7 +163,7 @@ export function About() {
             className="about-image"
             style={{ width: `${getImageWidth()}%`, transform: getImageTransform() }}
           >
-            <img src="./temp.jpg" alt="Profile" />
+            <img src={aboutImage} alt="Profile" />
           </div>
 
           {/* INFO PANEL */}
@@ -185,7 +186,7 @@ export function About() {
               </h2>
 
               <p>
-                I’m Kunj Desai, a tech-driven learner passionate about building real-world solutions.
+                I’m Samrat Majhi, a tech-driven learner passionate about building real-world solutions.
                 I enjoy exploring AI, machine learning, and innovative software development.
                 I’m eager to contribute my skills and grow in a challenging professional environment.
               </p>
@@ -196,7 +197,7 @@ export function About() {
               </p>
 
               <p>
-                4th-year B.Tech AI Engineering student with hands-on experience in ML & DL Projects.
+                4th-year B.Tech Computer Science student with hands-on experience in ML & DL Projects.
                 Proficient in Python, PyTorch, TensorFlow, and data preprocessing. Seeking internship opportunities to contribute to impactful AI solutions.
               </p>
             </div>
@@ -222,7 +223,6 @@ export function About() {
         <h2>Hobbies</h2>
         <div className="hobby-grid">
           <div className="hobby">🎧 Listening to Music</div>
-          <div className="hobby">📷 Photography</div>
           <div className="hobby">🎮 Gaming</div>
           <div className="hobby">🏀 Sports & Fitness</div>
         </div>

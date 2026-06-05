@@ -16,7 +16,6 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background-image: var(--hero-bg); /* set image via CSS variable */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -315,7 +314,7 @@
   --text-muted2: #0905ff;
   --accent: #12f7ff;
   --accent-hover: #ff3f73;
-  --hero-bg: url('./Hero.jpg'); /* dark theme bg */
+  --hero-bg: url('./Hero.png'); /* dark theme bg */
   --line : #ffffff;
 }
 
@@ -327,6 +326,6 @@
   --text-muted2: #ff0000;
   --accent: #00cfff;
   --accent-hover: #ff3f73;
-  --hero-bg: url('./j.jpg'); /* light theme bg */
+  --hero-bg: url('./j.png'); /* light theme bg */
   --line : #000000;
 }

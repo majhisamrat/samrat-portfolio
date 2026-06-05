@@ -1,22 +1,22 @@
 import { motion } from "framer-motion"; 
-import { Github, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 export function FloatingNav() {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/kunj2803', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/kunj-desai-07717b293/', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: 'https://www.instagram.com/kunj_2834/', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/majhisamrat', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/samrat-majhi-897724258/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/Samrat_Majhi19?t=SCi69UqZmTZbR_9IKWc9Ng&s=09', label: 'Twitter' },
+    
     { 
       icon: () => (
         <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
           <path d="M13.483 0v7.5h5.016l-7.5 9.5v-7.5H6L13.483 0zM10.988 7.5H6L13.483 0v7.5h-2.495zm2.495 9.5v-7.5h5.016l-7.511 9.5v-2z" />
         </svg>
       ), 
-      href: 'https://leetcode.com/kunj_2803', 
+      href: '#', 
       label: 'LeetCode' 
     },
-    { icon: Mail, href: 'mailto:kunjd2803@gmail.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:samratmajhi6291@gmail.com', label: 'Email' },
   ];
 
   return (

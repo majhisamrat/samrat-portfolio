@@ -59,17 +59,16 @@ export function Contact() {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "kunjd2803@gmail.com" },
-    { icon: Phone, label: "Phone", value: "+91 8758209508" },
-    { icon: MapPin, label: "Location", value: "Surat, Gujarat, India" },
+    { icon: Mail, label: "Email", value: "samratmajhi6291@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91 6291324785" },
+    { icon: MapPin, label: "Location", value: "Kolkata, West Bengal, India" },
   ];
 
   const quickLinks = [
-    { icon: Github, url: "https://github.com/kunj2803" },
-    { icon: Linkedin, url: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
-    { icon: Mail, url: "mailto:kunjd2803@gmail.com" },
-    { icon: MessageCircle, url: "https://wa.me/+918758209508" },
-    { icon: Instagram, url: "https://www.instagram.com/kunj_2834/" },
+    { icon: Github, url: "https://github.com/majhisamrat" },
+    { icon: Linkedin, url: "https://www.linkedin.com/in/samrat-majhi-897724258/" },
+    { icon: Mail, url: "mailto:samratmajhi6291@gmail.com" },
+    { icon: MessageCircle, url: "https://wa.me/+916291324785" },
   ];
 
   return (

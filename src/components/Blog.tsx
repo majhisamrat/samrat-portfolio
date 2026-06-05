@@ -6,36 +6,27 @@ export function Blog() {
   const blogPosts = [
     {
       title: 'Why I Love Building AI Projects',
-      excerpt: 'Working on AI-based systems like mammogram cancer detection has taught me how impactful technology can be when applied to healthcare. Combining deep learning with real-world problems is my favorite way to innovate.',
+      excerpt: 'Working on AI-based systems like   sentiment analysis and fake news detection, and a computer vision system  has taught me how impactful technology can be when applied to healthcare. Combining deep learning with real-world problems is my favorite way to innovate.',
       image: './blog1.png',
       date: 'Nov 20, 2025',
       readTime: '5 min read',
     },
+
     {
-      title: 'The Beauty of Simple Code',
-      excerpt: 'Clean code isn’t just about fewer lines — it’s about clarity. Elegance in code feels like poetry to me — each function should have rhythm and purpose.',
-      image: './blog2.jpg',
-      date: 'Nov 15, 2025',
-      readTime: '7 min read',
-    },
-    {
-      title: 'My Journey as a 3D Artist',
-      excerpt: 'Sharing my experiences, challenges, and lessons learned throughout my career in 3D animation.',
+      title: 'My Journey as a AI-ML Engineer',
+      excerpt: 'Sharing my experiences, engineering challenges, and lessons learned while building intelligent systems and deploying machine learning models.',
       image: './blog3.jpg',
       date: 'Nov 10, 2025',
       readTime: '6 min read',
     },
-    {
-      title: 'Mastering Visual Effects',
-      excerpt: 'Tips and techniques for creating professional-grade visual effects that enhance your projects.',
-      image: './blog4.png',
-      date: 'Nov 5, 2025',
-      readTime: '8 min read',
-    },
   ];
 
+  if (blogPosts.length === 0) {
+    return null;
+  }
+
   return (
-    <section id="blog" className="relative min-h-screen py-20">
+    <section id="blog" className="relative py-20">
       <div className="max-w-7xl mx-auto px-6">
         <motion.h2
           initial={{ x: -100, opacity: 0 }}

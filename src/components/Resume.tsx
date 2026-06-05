@@ -65,7 +65,7 @@ export function Resume() {
             transition={{ duration: 0.6 }}
             className="profile-name"
           >
-            Kunj D. Desai
+            Samrat Majhi
           </motion.h3>
 
           <motion.p
@@ -75,9 +75,9 @@ export function Resume() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="profile-info"
           >
-            📚 B.Tech — Artificial Intelligence & Data Science<br />
-            📍 Surat, Gujarat, India<br />
-            📩 kunjd2803@gmail.com | 📱 +91 8758209508
+            📚 B.Tech — Computer Science And Engineering <br />
+            📍 Kolkata, Westbengal, India<br />
+            📩 samratmajhi6291@gmail.com | 📱 +91 6291324785
           </motion.p>
 
           <motion.p
@@ -125,23 +125,18 @@ export function Resume() {
           <div className="resume-list">
             {[
               {
-                degree: "B.Tech in Artificial Intelligence & Data Science",
-                school: "S.C.E.T — Sarvajanik University, Surat",
-                period: "2022 – 2026",
-                detail: "Current GPA: 9.0",
+                degree: "B.Tech in Computer Science And Engineering",
+                school: "P.C.M.T — PAILAN COLLEGE OF MANAGEMENT AND TECHNOLOGY, Kolkata",
+                period: "2023 – 2026",
+                detail: "Current GPA : 8.67",
               },
               {
-                degree: "Higher Secondary (12th)",
-                school: "RSM Poonawala School",
-                period: "2020 – 2022",
-                detail: "78%",
+                degree: "Diploma",
+                school: "B.B.I.T  — BUDGE BUDGE INSTITUTE OF TECHNOLOGY",
+                period: "2020 – 2023",
+                detail: "74%",
               },
-              {
-                degree: "Secondary (10th)",
-                school: "Ambika Niketan School",
-                period: "2019 – 2020",
-                detail: "85%",
-              },
+             
             ].map((edu, i) => (
               <motion.div
                 key={i}
@@ -183,10 +178,9 @@ export function Resume() {
 
           <ul className="project-list">
             {[
-              "- Breast Cancer Detection using YOLO + Ensemble CNN",
               "- DocuChat – Document Q&A Chatbot (Gemini API)",
               "- Indian Sign Language Interpreter — in progress",
-              "- Mental Health Analyzer using NLP",
+              "- Mental Health Analyzer using Vertex AI",
             ].map((project, i) => (
               <motion.li
                 key={i}
@@ -224,7 +218,7 @@ export function Resume() {
 
           <div className="skill-tags">
             {[
-              "Python","C","C++","Java","TensorFlow","PyTorch","OpenCV",
+              "Python","R","C","TensorFlow","PyTorch","OpenCV",
               "Scikit-learn","YOLO","Streamlit","React","MySQL",
               "MongoDB","NLP","ML","DL","XAI","Creativity","Teamwork"
             ].map((skill, i) => (

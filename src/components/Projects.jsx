@@ -5,60 +5,52 @@ import "./projects.css";
 
 const PROJECTS = [
   {
-    title: "🩺 Mammogram Malignancy Detector",
-    desc: "Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.",
-    ss: "/mamo.png",
-    tech: ["TensorFlow", "Keras", "OpenCV", "YOLOv8"],
+    title: "💡 User Intent Detection & Drift Monitoring System",
+    desc: "Built an end-to-end intent classification system using TF-IDF with SVM and implemented real-time confidence-based drift detection.",
+    ss: "/drift.webp",
+    tech: ["Scikit-learn, TF-IDF, LR, FastAPI, Streamlit, Docker"],
+    live: "https://user-intent-api.onrender.com/docs",
+    code: "https://github.com/majhisamrat/user-intent-drift-detection",
+  },
+  {
+    title: "🗪  Multilingual, Multi agent health assistant for rural India",
+    desc: " Users interact via WhatsApp (primary) or a Next.js web interface. Arogya AI uses 14 specialized agents, each with a distinct responsibility.",
+    ss: "/argya.png",
+    tech: ["LangGraph", "FastAPI", "Redis", "Mem0", "Twilio", "Docker + Nginx"],
+    live: "https://arogya-ai-frontend-tau.vercel.app/",
+    code: "https://github.com/majhisamrat/ArogyaAI",
+  },
+  {
+    title: "🎭 Emotion-Based Music Recommendation System",
+    desc: "Developed and deployed an AI-powered music recommendation system integrating NLP based emotion detection, facial emotion recognition, and rule-based intent analysis",
+    ss: "/musicrm.jpg",
+    tech: [" Scikit-learn", "TensorFlow", "Streamlit", "OpenCV","FastAPI", " Spotify API"],
+    live: "https://emotion-based-music-recommendation-system-vjdxvgquxysycu5wetfz.streamlit.app/",
+    code: "https://github.com/majhisamrat/Emotion-Based-Music-Recommendation-System",
+  },
+  {
+    title: "💬 Sentiment Analysis using Natural Language Processing",
+    desc: " Built a sentiment analysis model to classify text into positive, negative, or neutral categories ",
+    ss: "/sen.png",
+    tech: ["TF-IDF,", "Scikit-learn", "Streamlit"],
     live: "#",
-    code: "https://github.com/kunjdesai/mammo-detector",
+    code: "https://github.com/majhisamrat/-Sentiment-Analysis",
   },
   {
-    title: "🧠 Mental Health Analyzer",
-    desc: "NLP-based system that analyzes user text for anxiety, stress, and depression indicators.",
-    ss: "/mentalhealth.jpg",
-    tech: ["Python", "Transformers", "NLTK", "scikit-learn"],
-    live: "https://mental-health-analyzer.streamlit.app/",
-    code: "https://github.com/kunj2803/Mental-Health-Analyzer",
-  },
-  {
-    title: "🤖 Indian Sign Language Interpreter",
-    desc: "Real-time gesture recognition using Mediapipe + TensorFlow for sign-to-text translation.",
-    ss: "/ISL.png",
-    tech: ["Mediapipe", "TensorFlow", "React", "Flask"],
+    title: "🛣️ Road Lane Detection with OpenCV ",
+    desc: "Developed a computer vision pipeline to detect lane lines using OpenCV.",
+    ss: "/roadlane.webp",
+    tech: ["OpenCV", "NumPy", "Matplotlib", "Streamlit"],
     live: "#",
-    code: "https://github.com/kunjdesai/ISL-Interpreter",
+    code: "https://github.com/majhisamrat/-Road-Lane-Detection-",
   },
   {
-    title: "💼 Portfolio Website",
-    desc: "Modern portfolio built with React + Framer Motion with smooth animations and clean UI.",
-    ss: "/portfolio.jpg",
-    tech: ["React", "Framer Motion", "Tailwind CSS"],
-    live: "https://kunj-desai.vercel.app/",
-    code: "https://github.com/kunj2803/Kunj-Portfolio",
-  },
-  {
-    title: "💬 DocuChat – Gemini AI Chatbot",
-    desc: "Gemini-powered PDF analyzer that answers queries from uploaded documents.",
-    ss: "/Docuchat.png",
-    tech: ["Gemini API", "LangChain", "Python", "Streamlit"],
-    live: "https://docuchat-chatbot.streamlit.app/",
-    code: "https://github.com/kunj2803/Docuchat-Chatbot",
-  },
-  {
-    title: "📊 ProfileX – Data Profiler",
-    desc: "Smart data profiling dashboard for CSV datasets — summary, visualization, and cleaning.",
-    ss: "/ProfileX.png",
-    tech: ["Streamlit", "Pandas", "Plotly"],
-    live: "https://profilex.streamlit.app/",
-    code: "https://github.com/kunjdesai/ProfileX",
-  },
-  {
-    title: "🧬 Breast Cancer Prediction",
-    desc: "ML pipeline using SVC, RF, and XGBoost with SMOTE for dataset balancing.",
-    ss: "/breastpred.jpg",
-    tech: ["scikit-learn", "XGBoost", "Pandas"],
+    title: "📑 Fake News Detection using ML",
+    desc: "Built an ML model to classify fake vs real news using NLP techniques like TF-IDF, CountVectorizer, and models like XGBoost.",
+    ss: "/fknews.jpg",
+    tech: ["XGBoost", "Pandas", "Streamlit"],
     live: "#",
-    code: "https://github.com/kunjdesai/BreastCancerPrediction",
+    code: "https://github.com/majhisamrat/Fake-News-Detection",
   },
 ];
 
@@ -88,7 +80,7 @@ export default function Projects() {
                   viewport={{ once: true }}
                   className="projects-title"
                 >
-          🚀My <span className="proj">Projects</span>
+          👨🏻‍💻My <span className="proj">Projects</span>
         </motion.h2>
 
         {/* Subtitle */}

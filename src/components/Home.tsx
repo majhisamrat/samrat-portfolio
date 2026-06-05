@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import { color, motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import "./Home.css";
+import HeroPng from "../assets/Hero.png";
+import JPng from "../assets/j.png";
 
 const githubLogo = "/github.png";
 const linkedinLogo = "/linkedin.png";
 const gmailLogo = "/gmail.png";
-const instagramLogo = "/insta.png";
-const facebookLogo = "/facebook.png";
-const leetcodeLogo = "/leetcode.png";
 const whatsappLogo = "/whatsapp.png";
 
 interface HeroProps {
@@ -25,20 +24,17 @@ export function Home({ theme }: HeroProps) {
   ];
 
   const connectLinks = [
-    { img: linkedinLogo, link: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
-    { img: gmailLogo, link: "mailto:kunjd2803@gmail.com" },
-    { img: whatsappLogo, link: "https://wa.me/+918758209508" },
-    { img: instagramLogo, link: "https://www.instagram.com/kunj_2834/" },
-    { img: facebookLogo, link: "https://www.facebook.com/kunj.desai.222608" },
+    { img: linkedinLogo, link: "https://www.linkedin.com/in/samrat-majhi-897724258/" },
+    { img: gmailLogo, link: "mailto:samratmajhi6291@gmail.com" },
+    { img: whatsappLogo, link: "https://wa.me/+916291324785" },
   ];
 
   const workLinks = [
-    { img: githubLogo, link: "https://github.com/kunj2803" },
-    { img: leetcodeLogo, link: "https://leetcode.com/u/Kunj_2803" },
+    { img: githubLogo, link: "https://github.com/majhisamrat" },
   ];
 
   const [typedRoles, setTypedRoles] = useState("");
-  const rolesText = "Artificial Intelligence Engineer | Frontend Developer | Tech Explorer";
+  const rolesText = "Artificial Intelligence Engineer | Machine Learning | Tech Explorer";
 
   useEffect(() => {
     let i = 0;
@@ -66,14 +62,14 @@ export function Home({ theme }: HeroProps) {
       <div
         className="hero-bg"
         style={{
-          backgroundImage: `url(${theme === "light" ? "/j.jpg" : "/Hero.jpg"})`,
+          backgroundImage: `url(${theme === "light" ? JPng : HeroPng})`,
         }}
       />
 
       <motion.div className="hero-content" variants={containerVariants} initial="hidden" animate="visible">
         <motion.h1 className="hero-name" variants={itemVariants}>
           Hi! I’m <br />
-          <span className="gradient-text hero-name-line">KUNJ DESAI</span>
+          <span className="gradient-text hero-name-line">SAMRAT MAJHI</span>
           <motion.div className="hero-line" variants={itemVariants} />
         </motion.h1>
 
@@ -83,7 +79,7 @@ export function Home({ theme }: HeroProps) {
 
         <motion.p className="hero-intro" variants={itemVariants}>
           Creating AI-powered solutions. 
-          Building modern web experiences. 
+          Building intelligent ML-powered web applications. 
           Solving real-world problems with technology.
         </motion.p>
 
@@ -97,9 +93,9 @@ export function Home({ theme }: HeroProps) {
 
         <motion.div className="hero-info" variants={itemVariants}>
           {[
-            { label: "📍 Location", value: "Surat, Gujarat, India" },
+            { label: "📍 Location", value: "Kolkata, West Bengal, India" },
             { label: "💼 Expertise", value: "AI/ML, Problem Solving" },
-            { label: "📞 Contact", value: "kunjd2803@gmail.com" },
+            { label: "📞 Contact", value: "samratmajhi6291@gmail.com" },
           ].map((info, i) => (
             <motion.div key={i} className="info-card" whileHover={{ scale: 1.05, y: -3 }} variants={itemVariants}>
               <h4>{info.label}</h4>

@@ -9,19 +9,21 @@ interface SkillRow {
 
 const SKILLS = [
   { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-  { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
   { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
   { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
   { name: "PyTorch", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
   { name: "OpenCV", logo: "https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" },
+  { name: "Apache Airflow", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF1BquKI7DqwioI_PG-jhFbSXHqMoYTE_PZw&s" },
+  { name: "Amazon SageMaker", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqco9E7IeQ7P8N-7ieXYoIOKPX8uDKUD3ZnQ&s" },
+  { name: "Amazon Bedrock", logo: "https://miro.medium.com/1*kWGsGBbLySCLNAqWAKpdew.jpeg" },
+  { name: "CICD Pipelines", logo: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*QtR4XDH9SgJRmRx08Ngzkg.png" },
 ];
 
 const ROWS: SkillRow[][] = [
@@ -30,18 +32,16 @@ const ROWS: SkillRow[][] = [
       title: "Programming Languages",
       items: [
         { name: "Python", level: 95 },
-        { name: "C", level: 80 },
-        { name: "C++", level: 85 },
-        { name: "Java", level: 70 },
+        { name: "R", level: 60 },
       ],
     },
     {
       title: "Web Technologies",
       items: [
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "React", level: 80 },
+        { name: "HTML", level: 85 },
+        { name: "CSS", level: 70 },
+        { name: "JavaScript", level: 80 },
+        { name: "React", level: 60 },
       ],
     },
     {
@@ -50,14 +50,24 @@ const ROWS: SkillRow[][] = [
         { name: "MySQL", level: 80 },
         { name: "MongoDB", level: 75 },
         { name: "Git", level: 85 },
+        { name: "Docker", level: 90 },
+        { name: "CICD", level: 70 },
       ],
     },
     {
       title: "Frameworks & Libraries",
       items: [
-        { name: "TensorFlow", level: 70 },
-        { name: "PyTorch", level: 75 },
+        { name: "TensorFlow", level: 90 },
+        { name: "PyTorch", level: 80 },
         { name: "OpenCV", level: 80 },
+        { name: "Apache Airflow", level: 70 },
+      ],
+    },
+    {
+      title: "Cloud & AI Platforms",
+      items: [
+        { name: "Amazon SageMaker", level: 75 },
+        { name: "Amazon Bedrock", level: 75 },
       ],
     },
   ],
@@ -66,8 +76,8 @@ const ROWS: SkillRow[][] = [
       title: "Core Concepts",
       items: [
         { name: "Data Structures & Algorithms", level: 95 },
-        { name: "Machine Learning", level: 90 },
-        { name: "Deep Learning", level: 88 },
+        { name: "Machine Learning", level: 95 },
+        { name: "Deep Learning", level: 95 },
         { name: "YOLO Object Detection", level: 80 },
         { name: "Explainable AI (XAI)", level: 75 },
       ],

@@ -12,7 +12,7 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home','About','Projects', 'Gallery', 'Skills', 'Resume', 'Blog', 'Contact'];
+  const navItems = ['Home','About','Projects', 'Skills', 'Resume', 'Blog', 'Contact'];
 
   const scrollToSection = (item: string) => {
     const id = item.toLowerCase();
@@ -44,13 +44,13 @@ export function Navbar() {
           >
             {/* KD Logo (smaller circle) */}
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-left shrink-0">
-              <span className="text-white font-bold text-lg md:text-xl">KD</span>
+              <span className="text-white font-bold text-lg md:text-xl">SM</span>
             </div>
 
             {/* Name + Subtitle */}
             <div className="flex flex-col">
               <span className="text-gray-900 dark:text-white font-semibold text-base md:text-lg">
-                Kunj Desai
+                Samrat Majhi
               </span>
               <span className="text-blue-500 dark:text-purple-100 font-medium text-sm md:text-base">
                 ML • AI • Developer
