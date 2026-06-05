@@ -36,7 +36,6 @@ To run this project locally:
 git clone https://github.com/majhisamrat/samrat-portfolio.git
 
 # 2️⃣ Navigate to project directory
-cd kunjdesai-portfolio
 
 # 3️⃣ Install dependencies
 npm install
