@@ -33,7 +33,7 @@ To run this project locally:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/kunj2803/kunj-portfolio2.git
+git clone https://github.com/majhisamrat/samrat-portfolio.git
 
 # 2️⃣ Navigate to project directory
 cd kunjdesai-portfolio
